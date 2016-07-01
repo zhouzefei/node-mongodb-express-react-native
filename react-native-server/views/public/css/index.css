@@ -1,0 +1,9 @@
+.div-row{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin: 0 auto 20px auto;
+}
+.table-bordered>thead>tr>td, .table-bordered>thead>tr>th{
+	border-bottom-width: 1px; 
+}

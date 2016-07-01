@@ -1,0 +1,51 @@
+extends ../layout
+
+block content
+	.container
+		.row
+			form.form-horizontal(method="post", action="/admin/mine/new")
+				input(type="hidden", name="mine[_id]", value="#{mine._id}")
+				.form-group
+					.div-row
+						label.col-sm-1.control-label(for="selectType") 类型
+						.col-sm-11
+							select#selectType.form-control(name='mine[type]')
+								if(mine.type!='instrest')
+									option(value='show',selected='selected') 作品
+									option(value='instrest') 兴趣
+								else
+									option(value='show') 作品
+									option(value='instrest',selected='selected') 兴趣
+									
+					.div-row
+						label.col-sm-1.control-label(for="inputTitle") 项目名称
+						.col-sm-11
+							input#inputTitle.form-control(type="text", name="mine[title]", value="#{mine.title}")
+					.div-row
+						label.col-sm-1.control-label(for="inputAuthor") 作者
+						.col-sm-11
+							input#inputDoctor.form-control(type="text", name="mine[author]", value="#{mine.author}")
+					.div-row
+						label.col-sm-1.control-label(for="inputCompany") 所在公司
+						.col-sm-11
+							input#inputCountry.form-control(type="text", name="mine[company]", value="#{mine.company}")
+					.div-row
+						label.col-sm-1.control-label(for="inputLanguage") 语言
+						.col-sm-11
+							input#inputLanguage.form-control(type="text", name="mine[language]", value="#{mine.language}")
+					.div-row
+						label.col-sm-1.control-label(for="inputYear") 时间
+						.col-sm-11
+							input#inputYear.form-control(type="text", name="mine[year]", value="#{mine.year}")
+					.div-row
+						label.col-sm-1.control-label(for="inputSummary") 简介
+						.col-sm-11
+							input#inputSummary.form-control(type="text", name="mine[summary]", value="#{mine.summary}")
+					.div-row
+						label.col-sm-1.control-label(for="inputUrl") 预览地址
+						.col-sm-11
+							input#inputSummary.form-control(type="text", name="mine[url]", value="#{mine.url}")
+					.div-row
+						label.col-sm-1.control-label(for="inputUrl") 
+						.col-sm-11
+							input#submit.btn.btn-danger(type="submit", value="提交")

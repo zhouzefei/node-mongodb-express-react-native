@@ -1,0 +1,26 @@
+extends ../layout
+
+block content
+	.container
+		.row
+			.col-md-10
+				dl.dl-horizontal
+					dt 项目类型
+					if (mine.type=='show')
+						dd 作品秀
+					else
+						dd 兴趣
+					dt 项目名称
+					dd= mine.title
+					dt 作者
+					dd= mine.author
+					dt 所在公司
+					dd= mine.company
+					dt 语言
+					dd= mine.language
+					dt 时间
+					dd= mine.year
+					dt 内容描述
+					dd=mine.summary
+					dt 预览地址
+					dd=mine.url

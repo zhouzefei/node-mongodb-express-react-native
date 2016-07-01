@@ -1,0 +1,19 @@
+{
+  "name": "react-native-server",
+  "version": "1.0.0",
+  "description": "node+mongo+express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "qingtian",
+  "license": "ISC",
+  "dependencies": {
+     "body-parser": "^1.14.1",
+     "express": "^4.13.3",
+     "jade": "^1.11.0",
+     "moment": "^2.10.6",
+     "mongoose": "^4.1.10",
+     "underscore": "^1.8.3"
+   }
+}

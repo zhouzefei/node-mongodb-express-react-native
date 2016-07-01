@@ -1,0 +1,35 @@
+extends ../layout
+
+block content
+	.container
+		.row
+			table.table.table-hover.table-bordered
+				thead
+					tr
+						th 类型
+						th(width='120px') 项目名称
+						th 作者
+						th 所在公司
+						th 语言
+						th(width='200px') 预览地址
+						th 查看
+						th 更新
+						th 删除
+				tbody
+					each item in mines
+						tr(class="item-id-#{item._id}")
+							if (item.type=='show')
+								td 作品秀
+							else
+								td 兴趣
+							td #{item.title}
+							td #{item.author}
+							td #{item.company}
+							td #{item.language}
+							td #{item.url}
+							td: a(href="../mine/#{item._id}", target="_blank") 查看
+							td: a(href="../admin/update/#{item._id}", target="_blank") 修改
+							td 
+								button.btn.btn-danger.del(type="button", data-id="#{item._id}") 删除
+
+
