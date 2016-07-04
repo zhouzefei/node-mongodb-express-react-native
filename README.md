@@ -7,4 +7,4 @@ node＋mongodb作为后端为react-native提供服务
 
 #### react-native
 #####第一步：npm install 下载依赖资源
-#####第二步：开启react-native(用xcode活着react-native ios启动)
+#####第二步：开启react-native(用xcode或者react-native run-ios启动)
