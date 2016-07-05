@@ -10,4 +10,4 @@ node＋mongodb作为后端为react-native提供服务
 #####第二步：开启react-native(用xcode或者react-native run-ios启动)
 
 ####效果预览
-![image](http://o9iuh08yr.bkt.clouddn.com/q2.gif)
+![image](https://github.com/zhouzefei/node-mongodb-express-react-native/blob/master/q2.gif)
